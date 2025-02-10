@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(45deg, #1a1a1a, #660033);
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            color: #ffccff;
+            position: relative;
+        }
+
+        h1 {
+            color: #ff6699;
+            font-size: 3em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 10px #ff66b2;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #660033;
+            padding: 10px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .nav a {
+            text-decoration: none;
+            padding: 12px 20px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 20px;
+            background: #ff3399;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            background: #ff0066;
+            box-shadow: 0px 0px 10px #ff66b2;
+        }
+
+        .content {
+            margin-top: 20px;
+            display: none;
+            animation: fadeIn 0.8s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        img,
+        video {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: #ff3399;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ff0066;
+            box-shadow: 0px 0px 10px #ff66b2;
+        }
+
+        #message {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ff99cc;
+            text-shadow: 2px 2px 5px #ff66b2;
+            display: none;
+        }
+
+        /* Floating Flowers and Chocolates Animation */
+        .floating-item {
+            position: absolute;
+            width: 80px;
+            height: auto;
+            animation: floatUp 10s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
+        }
+
+        .i-love-you {
+            font-size: 3em;
+            color: #ff3366;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: loveFade 2s ease-in-out forwards;
+        }
+
+        @keyframes loveFade {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🎉 Happy Birthday, My Love! 💖</h1>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#home" onclick="showTab('home')">Home</a>
+        <a href="#photos" onclick="showTab('photos')">Photos</a>
+        <a href="#videos" onclick="showTab('videos')">Videos</a>
+        <a href="#messages" onclick="showTab('messages')">Messages</a>
+        <a href="#surprise" onclick="showTab('surprise')">Surprise</a>
+    </div>
+
+    <!-- Home -->
+    <div id="home" class="content" style="display:block;">
+        <h2>Welcome to Your Special Day! 🎊</h2>
+        <p>Happy Birthday, My Love! ❤️
+
+            On this special day, I just want to remind you how incredibly amazing you are. You bring so much love,
+            laughter, and happiness into my life, and I’m beyond grateful to have you by my side.
+
+            Every moment with you feels magical, and I can't wait to create more beautiful memories together. May this
+            year bring you all the joy, success, and love you deserve.
+
+            Enjoy your day to the fullest, my queen! I love you endlessly. ❤️🎉🎂
+
+            Let me know if you want to personalize it further! 💖</p>
+            <br>
+            <img src="Spider.jpg" alt="my love">
+    </div>
+
+    <!-- Photos -->
+    <div id="photos" class="content">
+        <h2>📸 Beautiful Moments</h2>
+        <img src="My love.jpg" alt="Birthday Girl">
+        <br>
+        <img src="special moment.jpg" alt="Special Memory">
+    </div>
+
+    <!-- Videos -->
+    <div id="videos" class="content">
+        <h2>🎥 Special Video Memories</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <br>
+        <video controls>
+            <source src="WhatsApp Video 2025-02-10 at 16.58.35_94ae4038.mp4" type="video/mp4">
+        </video>
+        <br>
+        <video controls>
+            <source src="WhatsApp Video 2025-02-10 at 16.58.37_e170bcc4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Messages -->
+    <div id="messages" class="content">
+        <h1>💖 Happy Birthday, My Love! 💖</h1>
+        <p class="emoji">🎂🎁🌹💞</p>
+        <p>🌹 **Tumhari muskurahat meri duniya ka noor hai,**</p>
+        <p>💫 **Tumhari baatein mere dil ka suroor hai.**</p>
+        <p>❤️ **Har saal aata hai yeh din ek naye sapne ki tarah,**</p>
+        <p>🎊 **Tum meri zindagi ka sabse haseen guroor hai.**</p>
+
+        <p>🎶 **Meri har saans mein bas tumhara naam hai,**</p>
+        <p>🌙 **Meri har dua mein sirf tumhara salaam hai.**</p>
+        <p>💞 **Khuda kare hum yunhi saath chalein,**</p>
+        <p>✨ **Meri duniya mein tum meri subah aur shaam ho.**</p>
+
+        <p>💝 **Aaj ke din bas yahi dua hai,**</p>
+        <p>🎊 **Ki tumhari har khushi mujhse pehle aaye.**</p>
+        <p>🥰 **Tum meri mohabbat ka sabse khoobsurat ehsaas ho,**</p>
+        <p>🌸 **Meri zindagi ka sabse pyaara inaam ho!**</p>
+
+        <p class="footer">❤️🎂 Happy Birthday, My Love! 🎂❤️</p>
+    </div>
+
+
+    <!-- Surprise -->
+    <div id="surprise" class="content">
+        <h2>🎁 Click Below for a Surprise!</h2>
+        <button class="button" onclick="showSurprise()">Reveal Surprise</button>
+        <p id="message">💖 You are the most special person in my life! Love you always! 💖</p>
+        <audio id="music">
+            <source src="old-jwm-tum-se-hi_bzCX5VXs.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Floating Flowers, Chocolates, and Love Text -->
+    <script>
+        function showTab(tabName) {
+            document.querySelectorAll('.content').forEach(tab => tab.style.display = 'none');
+            document.getElementById(tabName).style.display = 'block';
+
+            // Stop music when switching tabs
+            document.getElementById("music").pause();
+            document.getElementById("music").currentTime = 0;
+        }
+
+        function showSurprise() {
+            document.getElementById("message").style.display = "block";
+            document.getElementById("music").play();
+
+            // Floating flowers and chocolates
+            for (let i = 0; i < 5; i++) {
+                createFloatingItem("flower.png");
+                createFloatingItem("chocolate.png");
+            }
+
+
+        }
+
+        function createFloatingItem(imageSrc) {
+            let item = document.createElement("img");
+            item.src = imageSrc;
+            item.classList.add("floating-item");
+            item.style.left = Math.random() * 90 + "vw";
+            item.style.animationDuration = Math.random() * 5 + 5 + "s";
+            document.body.appendChild(item);
+
+            setTimeout(() => {
+                item.remove();
+            }, 10000);
+        }
+    </script>
+</body>
+
+</html>
